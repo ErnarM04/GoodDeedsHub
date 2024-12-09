@@ -1,0 +1,54 @@
+<body>
+<div class="profile-page">
+  <header>
+    <h1>Welcome, Sarah!</h1>
+  </header>
+  <div class="main-content">
+    <div class="profile-section">
+      <div class="profile-card">
+        <h2>Your Profile</h2>
+        <p>Manage your profile and contact details</p>
+        <div class="profile-info">
+          <img id="pfp" src="https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg">
+          <div class="info">
+          <p><strong>Alua Omar</strong></p>
+          <p>{{'aluaomar123@test.com'}}</p>
+          <p>+1 (555) 123-4567</p>
+          </div>
+        </div>
+        <button>Edit Profile</button>
+      </div>
+      <div class="contributions-card">
+        <h2>Your Contributions</h2>
+        <p>Track your volunteer hours and achievements</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 75%;"></div>
+        </div>
+        <p>Total Hours: <strong>75 / 100</strong></p>
+        <ul>
+          <li>🌟 Superstar</li>
+          <li>💙 Compassionate</li>
+          <li>✅ Dedicated</li>
+        </ul>
+      </div>
+    </div>
+    <div class="projects-section">
+      <div class="tabs">
+        <button class="inactive" (click)="reco=true; appl=false; avai=false; showAll()" [ngClass]="reco ? 'active' : 'inactive'">Recommended</button>
+        <button class="inactive" (click)="reco=false; appl=true; avai=false; showApplied()" [ngClass]="appl ? 'active' : 'inactive'">Applied</button>
+        <button class="inactive" (click)="reco=false; appl=false; avai=true; showAll()" [ngClass]="avai ? 'active' : 'inactive'">Available</button>
+      </div>
+      <div class="projects">
+        <div *ngFor="let post of show" class="project-card">
+          <h3>{{post.title}}</h3>
+          <p><strong>{{post.organization}}</strong></p>
+          <p>{{post.text}}</p>
+          <p>📅 Starts June 15, 2023</p>
+          <button *ngIf="reco || avai" (click)="apply()">Apply Now</button>
+          <button *ngIf="appl" (click)="delete()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

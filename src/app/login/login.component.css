@@ -1,0 +1,83 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.card h1 {
+  color: #42b72a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card form button:hover {
+  background-color: #36a420;
+}
+
+.card form .create-account {
+  background-color: #93c572;
+  margin-top: 20px;
+}
+
+.card form .create-account:hover {
+  background-color: #81c752;
+}
+
+.card form a {
+  display: block;
+  margin: 10px 0;
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.card form a:hover {
+  text-decoration: underline;
+}
+
+.line {
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}

@@ -1,0 +1,160 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  gap: 20px;
+}
+
+.profile-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.profile-card, .contributions-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.profile-card h2, .contributions-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.profile-card p, .contributions-card p {
+  font-size: 0.9rem;
+  color: #606770;
+}
+
+.profile-card button, .project-card button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-card button:hover, .project-card button:hover {
+  background-color: #389725;
+}
+
+.contributions-card ul {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contributions-card li {
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #42b72a;
+  height: 100%;
+}
+
+.projects-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px;
+  background-color: #f0f2f5;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tabs button.active {
+  background-color: #42b72a;
+  color: white;
+}
+
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 200px;
+}
+
+.project-card h3 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #606770;
+}
+
+.project-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-card button:hover {
+  background-color: #333;
+}
+
+#pfp {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 10%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+}

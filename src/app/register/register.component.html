@@ -1,0 +1,22 @@
+<body>
+<div class="container">
+  <div class="card">
+    <h1>Create a New Account</h1>
+    <p>It’s quick and easy.</p>
+    <form>
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="New Password" required>
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" required>
+      <label>Gender</label>
+      <div class="gender">
+        <label><input (change)="gender = false;" type="radio" name="gender" value="female" required> Female</label>
+        <label><input (change)="gender = true" type="radio" name="gender" value="male" required> Male</label>
+      </div>
+      <a [routerLink]="['../profile']"><button (click)="signup()" type="submit">Sign Up</button></a>
+    </form>
+  </div>
+</div>
+</body>

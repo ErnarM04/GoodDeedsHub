@@ -1,0 +1,76 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.card h1 {
+  color: #42b72a;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #606770;
+  margin-bottom: 20px;
+}
+
+.card form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card form input[type="date"] {
+  padding: 8px;
+}
+
+.card form .gender {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.card form .gender label {
+  font-size: 0.9rem;
+}
+
+.card form button {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card form button:hover {
+  background-color: #36a420;
+}
